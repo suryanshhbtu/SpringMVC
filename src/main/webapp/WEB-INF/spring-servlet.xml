@@ -9,7 +9,12 @@
             http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
 	<context:annotation-config />
-
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		name="viewResolver">
+		<property name="prefix" value="/WEB_INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
 
 </beans>
 	
