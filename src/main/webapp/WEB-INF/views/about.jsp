@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>This is aboutpage</title>
+<title>This is about page</title>
 </head>
 <body>
 <h1>This Is Aboutpage</h1>
