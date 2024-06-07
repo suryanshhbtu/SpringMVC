@@ -1,17 +1,22 @@
 package springmvc.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
 
-    @RequestMapping("/home")
-    public String home() {
-        System.out.println("HOME");
-        return "home";
-    }
-
+	static {
+    System.out.println("HOME");
+	}
+	@RequestMapping("/home")
+	public String home(Model model) {
+	    System.out.println("HOME");
+	    model.addAttribute("name", "Suryansh");
+	    model.addAttribute("id", 200106069);
+	    return "home"; // Ensure this returns the correct view name
+	}
     @RequestMapping("/about")
     public String about() {
         return "about";

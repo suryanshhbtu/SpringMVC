@@ -7,7 +7,12 @@
 <title>This is home page</title>
 </head>
 <body>
-<h1>This Is Homepage</h1>
-
+<h1>This Is Homepages</h1>
+<% 
+String name = (String) request.getAttribute("name");
+System.out.println("Name attribute from request: " + name);
+%>
+Mera Naam Hai <%= name %>
 </body>
+
 </html>
