@@ -1,5 +1,8 @@
 package springmvc.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +18,11 @@ public class HomeController {
 	    System.out.println("HOME");
 	    model.addAttribute("name", "Suryansh");
 	    model.addAttribute("id", 200106069);
+	    List<String> list = new ArrayList<>();
+	    list.add("Suryansh");
+	    list.add("Yash");
+	    list.add("Shivam");
+	    model.addAttribute("list", list);
 	    return "home"; // Ensure this returns the correct view name
 	}
     @RequestMapping("/about")
