@@ -48,8 +48,21 @@ public class HomeController {
     	modelAndView.addObject("id", 200106069);
     	modelAndView.addObject("time", LocalDateTime.now());
     	
+    	List<Integer> marks = new ArrayList<>();
+    	marks.add(100);
+    	marks.add(90);
+    	marks.add(93);
+    	marks.add(89);
+    	marks.add(70);
+    	
+    	modelAndView.addObject("marks", marks);
     	//Setting the View name
     	modelAndView.setViewName("help");
     	return modelAndView;
+    }
+    @RequestMapping("/contact")
+    public String contact() {
+    	System.out.println("About");
+    	return "contact";
     }
 }

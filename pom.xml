@@ -24,8 +24,16 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
-			<scope>provided</scope> <!-- Ensure servlet API is provided by the container -->
+			<scope>provided</scope> <!-- Ensure servlet API is provided by the
+			container -->
+		</dependency><!--
+		https://mvnrepository.com/artifact/jstl/jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>mvc</finalName>
