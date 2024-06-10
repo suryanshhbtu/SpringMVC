@@ -60,9 +60,5 @@ public class HomeController {
     	modelAndView.setViewName("help");
     	return modelAndView;
     }
-    @RequestMapping("/contact")
-    public String contact() {
-    	System.out.println("About");
-    	return "contact";
-    }
+
 }
