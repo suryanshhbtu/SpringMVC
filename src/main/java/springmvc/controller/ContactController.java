@@ -14,6 +14,11 @@ import springmvc.entity.User;
 @RequestMapping("/api")
 public class ContactController {
 	
+	@ModelAttribute
+	public void commonDataForModels(Model model) {
+		model.addAttribute("heading", "This is Heading.");
+		model.addAttribute("description", "This is My Description.");
+	}
 	@RequestMapping("/contact")
 	public String contact() {
 		System.out.println("About");
@@ -21,9 +26,8 @@ public class ContactController {
 	}
 	@RequestMapping(path="/processform", method = RequestMethod.POST)
 	public String processForm(@ModelAttribute User user, Model model) {
-		System.out.println(user+" edited");
-		model.addAttribute("heading", "This is Heading.");
-		model.addAttribute("description", "This is My Description.");
+		System.out.println(user+" edited ____ ");
+		model.addAttribute("description", "This is Child My Description.");
 		return "processedForm";
 	}
 }
