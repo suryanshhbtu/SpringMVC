@@ -12,9 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-	static {
-    System.out.println("HOME");
-	}
 	@RequestMapping("/home")
 	public String home(Model model) {
 	    System.out.println("HOME");
