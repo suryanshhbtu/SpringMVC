@@ -10,9 +10,9 @@
 <title>This Form Details</title>
 </head>
 <body>
-	<h1>User Email : ${email}</h1>
-	<h1>User Name : ${username}</h1>
-	<h1>User Password : ${password}</h1>
+	<h1>User Email : ${user.email}</h1>
+	<h1>User Name : ${user.username}</h1>
+	<h1>User Password : ${user.password}</h1>
 </body>
 
 </html>
