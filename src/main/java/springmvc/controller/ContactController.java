@@ -20,8 +20,10 @@ public class ContactController {
 		return "contact";
 	}
 	@RequestMapping(path="/processform", method = RequestMethod.POST)
-	public String processForm(@ModelAttribute User user) {
+	public String processForm(@ModelAttribute User user, Model model) {
 		System.out.println(user+" edited");
+		model.addAttribute("heading", "This is Heading.");
+		model.addAttribute("description", "This is My Description.");
 		return "processedForm";
 	}
 }
