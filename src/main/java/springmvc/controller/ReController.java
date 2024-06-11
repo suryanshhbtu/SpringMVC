@@ -11,7 +11,7 @@ public class ReController {
 	public RedirectView one() {
 		System.out.println("One Is Called (updated)");
 		RedirectView redirectView = new RedirectView();
-		redirectView.setUrl("two"); // '/' removed due to relative url
+		redirectView.setUrl("https://www.google.com"); // '/' removed due to relative url
 		return redirectView;
 	}
 	@RequestMapping("/two")
